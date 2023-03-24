@@ -1,0 +1,43 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Color Changer with Range Slider</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="style/test.css">
+	</head>
+	<body>
+		<header id="changeHead">
+			<h1>Color Changer</h1>
+		</header>
+		<article>
+			<section id="RGBSliders">
+				<h2>The Sliders</h2>
+				<div id="red">
+					<label class="slideLabel">Red</label>
+					<input type="range" min="0" max="255" id="slideRed" class="colorSlider" value=""><span id="valueRed">0</span>
+				</div>
+				<div id="green">
+					<label class="slideLabel">Green</label>
+					<input type="range" min="0" max="255" id="slideGreen" class="colorSlider" value=""><span id="valueGreen">0</span>
+				</div>
+				<div id="blue">
+					<label class="slideLabel">Blue</label>
+					<input type="range" min="0" max="255" id="slideBlue" class="colorSlider" value=""><span id="valueBlue">0</span>
+				</div>
+				<div id="opacity">
+					<label class="slideLabel">Opacity</label>
+					<input type="range" min="0" max="10000" step="100" id="slideOpacity" class="colorSlider" value=""><span id="valueOpacity">0</span>
+				</div>
+			</section>
+			<section id="theResult">
+				<div></div>
+			</section>
+			<button type="button" id="copyRGBA">Copy Code</button>
+			<input id="theColorRGBACode">0</input>
+			<div id="theColorHSLACode">0</div>
+			<div id="theColorHexCode">0</div>
+		</article>
+		<script src="script/test.js"></script>
+	</body>
+</html>

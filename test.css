@@ -1,0 +1,89 @@
+html {
+	font-size: 62.5%;
+}
+
+body {
+	background-color: grey;
+	margin: 0px;
+}
+
+#changeHead {
+	padding: 0.002rem;
+	text-align: center;
+	/* font-family: Old English Text MT; */
+	font-size: 1.6rem;
+	background-color: black;
+	color: white;
+}
+
+article {
+	margin-top: 50px;
+	margin-left: 20px;
+}
+
+.slideLabel {
+	display: block;
+	font-size: 1.6rem;
+}
+
+.colorSlider {
+	appearance: none;
+	height: 10px;
+	width: 250px;
+	outline: none;
+	opacity: 0.7;
+	transition: opacity 0.2s;
+}
+
+.colorSlider:hover {
+	opacity: 1;
+}
+
+.colorSlider::-webkit-slider-thumb {
+	-webkit-appearance: none;
+	/*This is the first time I'm using anyting,...-webkit-.*/
+	height: 20px;
+	width: 20px;
+	border-radius: 10px;
+	cursor: pointer;
+	background-color: black;
+}
+
+#slideRed {
+	background-color: red;
+}
+
+#slideGreen {
+	background-color: lime;/*hex code: #00ff00*/
+	/*green hex code: #008000*/
+}
+
+#slideBlue {
+	background-color: blue;
+}
+
+#slideOpacity {
+	background-color: white;
+}
+
+span {
+	font-size: 1.6rem;
+}
+
+#theResult {
+	margin-top: 50px;
+}
+
+#theResult div {
+	width: 250px;
+	height: 250px;
+	background-color: white;
+}
+
+#theColorHexCode, #theColorHSLACode, #theColorRGBACode {
+	font-size: 4rem;
+}
+
+/* #theColorOpacity {
+	font-size: 4rem;
+} */
